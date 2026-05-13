@@ -13,3 +13,12 @@ const resultatNom = document.getElementById("resultatNom");
 btnNom.addEventListener("click", function () {
   resultatNom.textContent = "Bonjour " + inputNom.value;
 });
+
+
+const contactForm = document.getElementById("contactForm");
+const formResult = document.getElementById("formResult");
+
+contactForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  formResult.textContent = "Message envoyé avec succès !";
+});
