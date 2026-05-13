@@ -5,7 +5,8 @@ ul{
 li{
     list-style: none;
 }
-a{
+nav a{
+    margin: 0px 10px;
     text-decoration: none;
     color: rgb(247, 237, 237);
 }
