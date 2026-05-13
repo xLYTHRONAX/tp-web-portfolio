@@ -16,3 +16,10 @@ body
     font-family: Arial, sans-serif;
     background-color: rgb(10, 10, 10);
 }
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
