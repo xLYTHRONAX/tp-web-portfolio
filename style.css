@@ -1,0 +1,17 @@
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(247, 237, 237);
+}
+body
+{
+   
+    font-family: Arial, sans-serif;
+    background-color: rgb(10, 10, 10);
+}
