@@ -5,8 +5,16 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const submit = document.getElementById("btn");
 
+const savedUser= JSON.parse(localStorage.getItem("user"))
+
 submit.addEventListener('click', function(event) {  
   event.preventDefault();
+
+  const user= {
+    name: nom.value,
+    email: email.value,
+    password: password.value
+  };
 
   const name = nom.value;          
   const emailVal = email.value;    
@@ -28,6 +36,14 @@ submit.addEventListener('click', function(event) {
     alert("Veuillez remplir tous les champs du formulaire.");
     return;
   }
+
+  const user= {
+    name: nom.value,
+    email: email.value,
+    password: password.value
+  };
+
+  localStorage.setItem("user", JSON.stringify(user));
 
   alert("Nom: " + name + "\nEmail: " + emailVal + "\nMot de passe: " + passwordVal);
 });

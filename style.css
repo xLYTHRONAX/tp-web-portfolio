@@ -50,7 +50,8 @@ body
     width: 300px;
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid rgb(160, 2, 2);
+    border: none;
+    box-shadow: 0 5px 8px rgb(160, 2, 2);
     outline: none;
 }
 
