@@ -12,7 +12,19 @@ submit.addEventListener('click', function(event) {
   const emailVal = email.value;    
   const passwordVal = password.value; 
 
-  if (!name || !emailVal || !passwordVal) {
+  if (!passwordVal) {
+    alert("Veuillez remplir le champ du mot de passe.");
+    return;
+  }
+  else if (!emailVal.value.includes("@")) {
+    alert("Veuillez entrer une adresse email valide.");
+    return;
+  }
+  else if (passwordVal.val.length < 8) {
+    alert("Le mot de passe doit contenir au moins 8 caractères.");
+    return;
+  }
+  else if (!name || !emailVal || !passwordVal) {
     alert("Veuillez remplir tous les champs du formulaire.");
     return;
   }

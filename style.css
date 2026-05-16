@@ -37,6 +37,38 @@ body
   box-shadow: 0 4px 10px rgb(160, 2, 2);
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;       
+    margin-top: 20px;
+}
+
+.form input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(160, 2, 2);
+    outline: none;
+}
+
+.form button {
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(135, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: rgb(200, 0, 0);
+    transition: 0.3s ease-in-out;
+}
+
 @media (max-width: 500px) {
    
   ul
